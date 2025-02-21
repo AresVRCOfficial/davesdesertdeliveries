@@ -13,32 +13,47 @@
 </head>
 <body class="bg-gray-100 text-gray-900">
     
+    <!-- Navigation Bar -->
+    <nav class="w-full bg-gray-900 text-white py-4 text-center fixed top-0 left-0 right-0 z-50">
+        <div class="flex justify-center space-x-6 text-lg font-bold">
+            <a href="#home" class="hover:underline">Home</a>
+            <a href="#about" class="hover:underline">About</a>
+            <a href="#services" class="hover:underline">Services</a>
+            <a href="#contact" class="hover:underline">Contact</a>
+        </div>
+    </nav>
+    
+    <!-- Header -->
+    <header id="home" class="w-full bg-gray-900 text-white py-6 text-center text-3xl font-bold mt-12">
+        Dave's Desert Deliveries & Rideshare
+    </header>
+    
     <!-- Hero Section -->
     <section class="h-screen flex flex-col justify-center items-center text-center bg-white p-6">
-        <h1 class="text-4xl font-bold">Fast, Reliable Deliveries & Rides</h1>
-        <p class="text-lg mt-4">Serving Southern Nevada & Utah</p>
+        <h1 class="text-5xl font-bold">Fast, Reliable Deliveries & Rides</h1>
+        <p class="text-2xl mt-4">Serving Southern Nevada & Utah</p>
         <div class="mt-6 space-x-4">
-            <a href="#contact" class="bg-gray-800 text-white px-6 py-3 rounded-lg text-lg">Book a Ride</a>
-            <a href="#contact" class="bg-gray-600 text-white px-6 py-3 rounded-lg text-lg">Order a Delivery</a>
+            <a href="#contact" class="bg-gray-800 text-white px-8 py-4 rounded-lg text-2xl">Book a Ride</a>
+            <a href="#contact" class="bg-gray-600 text-white px-8 py-4 rounded-lg text-2xl">Order a Delivery</a>
         </div>
     </section>
     
     <!-- About Section -->
-    <section class="py-16 px-6 bg-gray-200 text-center">
-        <h2 class="text-3xl font-semibold">About Us</h2>
-        <p class="max-w-2xl mx-auto mt-4 text-lg">Dave’s Desert Deliveries & Rideshare provides fast, reliable service to retirees and locals alike. We pride ourselves on safety, affordability, and excellent customer service.</p>
+    <section id="about" class="py-16 px-6 bg-gray-200 text-center">
+        <h2 class="text-4xl font-semibold">About Us</h2>
+        <p class="max-w-2xl mx-auto mt-4 text-xl">Dave’s Desert Deliveries & Rideshare provides fast, reliable service to retirees and locals alike. We pride ourselves on safety, affordability, and excellent customer service.</p>
     </section>
     
     <!-- Services Section -->
-    <section class="py-16 px-6 bg-white text-center">
-        <h2 class="text-3xl font-semibold">Our Services</h2>
+    <section id="services" class="py-16 px-6 bg-white text-center">
+        <h2 class="text-4xl font-semibold">Our Services</h2>
         <div class="flex flex-col md:flex-row justify-center items-center gap-10 mt-6">
-            <div class="bg-gray-200 p-6 rounded-lg shadow-lg w-80">
-                <h3 class="text-xl font-bold">Restaurant Delivery</h3>
+            <div class="bg-gray-200 p-8 rounded-lg shadow-lg w-96 text-xl">
+                <h3 class="text-2xl font-bold">Restaurant Delivery</h3>
                 <p class="mt-2">Bringing your favorite meals straight to your door.</p>
             </div>
-            <div class="bg-gray-200 p-6 rounded-lg shadow-lg w-80">
-                <h3 class="text-xl font-bold">Rideshare Service</h3>
+            <div class="bg-gray-200 p-8 rounded-lg shadow-lg w-96 text-xl">
+                <h3 class="text-2xl font-bold">Rideshare Service</h3>
                 <p class="mt-2">Safe, comfortable, and affordable rides at your convenience.</p>
             </div>
         </div>
@@ -46,21 +61,21 @@
     
     <!-- Contact Section -->
     <section id="contact" class="py-16 px-6 bg-gray-200 text-center">
-        <h2 class="text-3xl font-semibold">Contact & Booking</h2>
-        <p class="mt-4 text-lg">Call us at <strong>(555) 123-4567</strong> or use the form below:</p>
-        <form class="mt-6 max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
-            <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded">
-            <input type="tel" placeholder="Your Phone Number" class="w-full p-3 mb-4 border rounded">
-            <select class="w-full p-3 mb-4 border rounded">
+        <h2 class="text-4xl font-semibold">Contact & Booking</h2>
+        <p class="mt-4 text-xl">Call us at <strong>(555) 123-4567</strong> or use the form below:</p>
+        <form class="mt-6 max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <input type="text" placeholder="Your Name" class="w-full p-4 mb-4 border rounded text-lg">
+            <input type="tel" placeholder="Your Phone Number" class="w-full p-4 mb-4 border rounded text-lg">
+            <select class="w-full p-4 mb-4 border rounded text-lg">
                 <option value="ride">Book a Ride</option>
                 <option value="delivery">Order a Delivery</option>
             </select>
-            <button type="submit" class="w-full bg-gray-800 text-white py-3 rounded-lg">Submit</button>
+            <button type="submit" class="w-full bg-gray-800 text-white py-4 rounded-lg text-xl">Submit</button>
         </form>
     </section>
     
     <!-- Footer -->
-    <footer class="py-6 bg-gray-900 text-white text-center">
+    <footer class="py-6 bg-gray-900 text-white text-center text-xl">
         <p>&copy; 2025 Dave's Desert Deliveries & Rideshare. All rights reserved.</p>
     </footer>
     
